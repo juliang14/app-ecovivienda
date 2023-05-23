@@ -1,0 +1,7 @@
+{
+  "name": "app-ecovivienda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
