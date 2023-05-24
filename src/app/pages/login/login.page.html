@@ -1,4 +1,4 @@
-
+<div data-bs-toggle="modal" data-bs-target="#modalCenter" id="truco"></div>
         <!-- sections -->
         <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 m-auto">
           <div class="row">
@@ -51,8 +51,8 @@
                       </div>
                       <div class="footer-form-login mb-2">
                           <nav class="nav text-center">
-                              <a class="col-6 nav-link" onclick="optionLogin('sendPassword');">Olvid&eacute; mi clave</a>
-                              <a class="col-6 nav-link" onclick="optionLogin('TyC');">Consulta los TyC</a>
+                              <a class="col-6 nav-link" (click)="optionLogin('sendPassword')">Olvid&eacute; mi clave</a>
+                              <a class="col-6 nav-link" (click)="optionLogin('TyC')">Consulta los TyC</a>
                           </nav>
                       </div>
                   </form>
@@ -135,6 +135,7 @@
           </div>
       </div>
       <!-----------------------   FIN MODAL  ------------------------------------>
+     
       <div id="swal-container"></div>
   <footer class="footer row">
       <div class="version-app">

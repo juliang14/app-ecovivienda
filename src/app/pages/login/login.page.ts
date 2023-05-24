@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { FormControl,Validators, FormGroup } from '@angular/forms';
 import { LoginService } from '../../services/login.service';
 import { Login } from '../../interfaces/login.interface';
 import Swal from 'sweetalert2';
 import * as $ from 'jquery';
-
 
 @Component({
   selector: 'app-login',
@@ -12,7 +11,7 @@ import * as $ from 'jquery';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
+  
   login = new FormGroup({
     documentType : new FormControl(''),
     document : new FormControl(''),
@@ -61,4 +60,26 @@ export class LoginPage implements OnInit {
       $('#password').attr('type','password');
     }
   }
+  optionLogin(opcion:string){
+    //const elementoJQuery = $('#modalCenter') as any;
+    const elemento = document.getElementById('truco');
+    
+    $('.modal-header .modal-title').html('');
+    $('.control-modal').addClass('off');
+    if (opcion === 'sendPassword') {
+        $('.modal-header .modal-title').html('Recuperar contraseña');
+        $('.modal-getEmail').removeClass('off');
+    }else if(opcion === 'TyC'){
+        $('.modal-header .modal-title').html('Terminos y condiciones');
+        $('.modal-TyC').removeClass('off');
+    }
+    if (elemento) {
+      elemento.click();  
+      $('.modal-backdrop.fade.show').removeClass('modal-backdrop fade show');
+    }
+    
+    //elementoJQuery.modal();
+    //$('#modalCenter').modal('show');
+  }
+
 }
