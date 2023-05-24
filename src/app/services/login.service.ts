@@ -18,26 +18,6 @@ export class LoginService {
 
   constructor(private http: HttpClient,private navCtrl: NavController) { }
 
-
-  login2(form: Login) {
-    //const url = 'https://devjgomez.000webhostapp.com/servicios/ecovivienda/';
-    const url = 'http://localhost/servicios/ecovivienda/';
-    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    console.log('form:', form);
-    return this.http.post(url, form, { headers }).pipe(
-      tap(response => {
-        console.log('Respuesta de la API:', response);
-        // Realiza las acciones necesarias con la respuesta de la API
-      }),
-      /*catchError(error => {
-        // Manejar errores de la solicitud
-        console.error('Error:', error);
-        return throwError('Ha ocurrido un error en la solicitud.');
-      })*/
-      catchError(this.handleError)
-    ).subscribe();
-  }
-
   login(form: Login) {
     //const url = 'https://devjgomez.000webhostapp.com/servicios/ecovivienda/';
     const url = 'http://localhost/servicios/ecovivienda/';

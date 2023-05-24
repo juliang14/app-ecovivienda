@@ -1,6 +1,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { FormControl,Validators, FormGroup } from '@angular/forms';
 import { LoginService } from '../../services/login.service';
+import { SendMailService } from '../../services/send-mail.service';
 import { Login } from '../../interfaces/login.interface';
 import Swal from 'sweetalert2';
 import * as $ from 'jquery';
@@ -18,8 +19,11 @@ export class LoginPage implements OnInit {
     email : new FormControl(''),
     password : new FormControl('',Validators.required)
   })
+  sendMail = new FormGroup({
+    email : new FormControl('',Validators.required)
+  })
 
-  constructor(private loginService:LoginService){
+  constructor(private loginService:LoginService,private sendMailService:SendMailService){
   }
 
   ngOnInit() : void{
@@ -28,6 +32,10 @@ export class LoginPage implements OnInit {
   onLogin(login: any){
     console.log(login)
     this.loginService.login(login);
+  }
+  onSendMail(sendMail: any){
+    console.log('1.sendMail: ',sendMail)
+    this.sendMailService.sendMail(sendMail);
   }
 
   cambiarLogin(tipo:string){

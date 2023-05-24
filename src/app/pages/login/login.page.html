@@ -114,10 +114,10 @@
                   </div>
                   <div class="modal-body">
                       <div class="modal-getEmail control-modal off">
-                          <form  >
+                          <form  [formGroup]="sendMail" (ngSubmit)="onSendMail(sendMail.value)">
                               <h6>Digita tu correo para recuperar tu contraseña.</h6>
                               <div class="text-center">
-                                  <input class="form-control mt-4" name="email" id="email" type="email" placeholder="email" required/>
+                                  <input class="form-control mt-4" name="email" id="email" type="email" placeholder="email" required formControlName="email"/>
                                   <button class="btn btn-primary btn-send mt-3">Enviar</button>
                               </div>
                           </form>
