@@ -12,4 +12,9 @@ export class HomePage implements OnInit {
   ngOnInit() {
   }
 
+  btnBellavista(){
+    /*$('.section-apto').addClass('off');
+    $('.section-carrousel').removeClass('off');
+    $(document).scrollTop($(document).height());*/
+  }
 }
