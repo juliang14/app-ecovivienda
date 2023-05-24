@@ -15,8 +15,8 @@
                   <form class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 m-auto form-login" [formGroup]="login" (ngSubmit)="onLogin(login.value)">
                       <div class="header-form-login">
                           <nav class="nav text-center">
-                              <a class="col-6 nav-link active">C&eacute;dula</a>
-                              <a class="col-6 nav-link">Correo</a>
+                              <a class="col-6 nav-link active" (click)="cambiarLogin('cedula')" id="cedula">C&eacute;dula</a>
+                              <a class="col-6 nav-link" (click)="cambiarLogin('correo')" id="correo">Correo</a>
                           </nav>
                       </div>
                       <div class="body-form-login">
@@ -41,8 +41,8 @@
                           <label for="password" class="form-label mt-3">Contraseña</label>
                           <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-4 input-group">
                               <input type="password" name="password" class="form-control" id="password" required formControlName="password">
-                              <span class="input-group-text btn-password">
-                              <i class="fa-solid fa-eye" id="togglePassword" ></i>
+                              <span class="input-group-text btn-password" (click)="verClave()">
+                                <i class="fa-solid fa-eye" id="togglePassword" ></i>
                               </span>
                           </div>
                           <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
