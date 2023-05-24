@@ -1,0 +1,172 @@
+.off{
+    display: none;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+.text-name-user{
+    margin: auto 10px auto 0px;
+    color: #365599;
+}
+.offcanvas-header{
+    color: #365599;
+    border-bottom: 1px solid rgba(13,39,80,.16);
+    box-shadow: inset -.286rem -.286rem .571rem 0 rgba(13,39,80,.16)/*#fff*/,
+                inset .286rem .286rem .571rem 0 rgba(13,39,80,.16);
+}
+.header-change-pasword{
+    color: #365599;
+    border-bottom: 2px solid rgba(13,39,80,.16);
+}
+.img-logo-change-pasword{
+    width: 150px;
+}
+#icon-user{
+    border-radius: 20px;
+    box-shadow: inset -.286rem -.286rem .571rem 0 rgba(13,39,80,.16)/*#fff*/,
+                inset .286rem .286rem .571rem 0 rgba(13,39,80,.16);
+    padding: 8px 10px;
+}
+#navbarPage > div{
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: inset -.286rem -.286rem .571rem 0 rgba(13,39,80,.16)/*#fff*/,
+                inset .286rem .286rem .571rem 0 rgba(13,39,80,.16);
+}
+#navbarPage .active{
+    font-weight: bold;
+}
+#navbarPage a{
+    color: #7A7A7B;
+}
+.footer{
+    background-color: #176FB4;
+}
+.footer .text-copy-ecovivienda{
+    color: #FFF;
+}
+.footer .text-copy-ecovivienda a{
+    color: #FFF;
+    text-decoration: none;
+}
+.footer .text-copy-ecovivienda i{
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid;
+}
+.footer .text-copy{
+    font-weight: bold;
+    color: #fff;
+    font-size: 10px;
+}
+.footer .img-footer{
+    height: 60px;
+}
+.footer .text-copy-ecovivienda strong{
+    border-right: 2px solid #fff;
+    padding: 4px 10px 4px 4px;
+}
+.footer .text-copy-ecovivienda span{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.footer .text-copy-ecovivienda .fa-brands.fa-facebook-f{
+    padding: 5px 9px;
+}
+.footer .text-copy-ecovivienda .fa-brands.fa-instagram{
+    padding: 5px 7px;
+}
+.footer .text-copy-ecovivienda .fa-brands.fa-twitter{
+    padding: 5px;
+}
+.footer .text-copy-ecovivienda .fa-brands.fa-youtube{
+    padding: 5px;
+}
+.tittle-login{
+    color: #484e62;
+}
+.tittle-login span{
+    color: #004884;
+}
+.border-card-home{
+    border-right: 2px solid #7A7A7B;
+}
+.border-section-card{
+    border: 1px solid #7A7A7B;
+    border-radius: 10px;
+}
+.text-name-project-carrousel{
+    font-weight: bold;
+}
+.list-about .list-group-item{
+    border-color: #fff!important;
+
+}
+.color-blue{
+    color: #004884;
+    font-weight: bold;
+}
+.nav-left-newsletters{
+    border: 1px solid #004884;
+}
+.header-nav-left{
+    background-color: #004884;
+    font-weight: bold;
+}
+.header-nav-left > a{
+    color: #fff!important;
+}
+.item-nav-left{
+    background-color: #e8eaef;
+    cursor: pointer;
+}
+.item-nav-left:hover{
+    background-color: #004884;
+}
+.item-nav-left:hover > a{
+    color: #fff;
+}
+.item-nav-left a{
+    color: #004884;
+    font-weight: bold;
+}
+.visor{
+    width: 90%;
+    height: 500px;
+    border: 3px solid #7A7A7B;
+}
+.content-figure figure{
+    padding: 10px;
+}
+.video{
+    cursor: pointer;
+}
+.footer-logos{
+    text-align: right;
+}
+@media screen and (min-width: 200px) and (max-width: 991px){
+    .container-nav-center{
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: inset -.286rem -.286rem .571rem 0 rgba(13,39,80,.16)/*#fff*/,
+                    inset .286rem .286rem .571rem 0 rgba(13,39,80,.16);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #navbarPage > div{
+        box-shadow: inset -.286rem -.286rem .571rem 0 #fff,
+                    inset .286rem .286rem .571rem 0 #fff;
+    }
+    .footer-logos{
+        text-align: center;
+    }
+    .footer .text-copy-ecovivienda span {
+        font-size: 15px;
+    }
+}
